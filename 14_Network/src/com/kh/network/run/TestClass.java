@@ -9,8 +9,19 @@ public class TestClass {
 		// Home Sweet Home ~ ~ ~
 		// 집 좋다 좋아 ~~ 이게 집이지 ~~
 		// 아 오늘도 열심히 공부했다 고생했다
+		// 아 오늘도 열심히 공부했다 고생했다		
+		// 아 마지막으로 한 번 만 더해봐야징 키키
+	}
 
-
+	public void hi() {
+		System.out.println("가보자구~~~~~");
+		 
+	}
+	
+	public void abc() {
+		System.out.println(1);
+		System.out.println(2);
+		System.out.println(3);
 	}
 
 }
