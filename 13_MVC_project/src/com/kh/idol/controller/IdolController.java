@@ -154,5 +154,11 @@ public class IdolController {
 		
 	}
 	
+	public List<Board> selectBoardList() {
+		// View의 요청에 의해 호출되며,
+		// 게시글 목록이 담겨있는 것을 되돌려주어야함
+		return boards;
+		
+	}
 
 }
