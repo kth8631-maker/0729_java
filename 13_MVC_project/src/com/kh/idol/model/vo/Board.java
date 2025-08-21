@@ -4,7 +4,7 @@ public class Board {
 	
 	private int boardNo;
 	private String boardTitle;
-	private String boareContent;
+	private String boardContent;
 	private String userId;
 	private String createDate;
 	
@@ -16,7 +16,7 @@ public class Board {
 		super();
 		this.boardNo = boardNo;
 		this.boardTitle = boardTitle;
-		this.boareContent = boareContent;
+		this.boardContent = boareContent;
 		this.userId = userId;
 		this.createDate = createDate;
 	}
@@ -38,11 +38,11 @@ public class Board {
 	}
 
 	public String getBoareContent() {
-		return boareContent;
+		return boardContent;
 	}
 
 	public void setBoareContent(String boareContent) {
-		this.boareContent = boareContent;
+		this.boardContent = boareContent;
 	}
 
 	public String getUserId() {
@@ -63,7 +63,7 @@ public class Board {
 
 	@Override
 	public String toString() {
-		return "Board [boardNo=" + boardNo + ", boardTitle=" + boardTitle + ", boareContent=" + boareContent
+		return "Board [boardNo=" + boardNo + ", boardTitle=" + boardTitle + ", boareContent=" + boardContent
 				+ ", userId=" + userId + ", createDate=" + createDate + "]";
 	}
 	

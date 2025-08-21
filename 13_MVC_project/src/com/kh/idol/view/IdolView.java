@@ -201,7 +201,7 @@ public class IdolView {
 		switch(menuNo) {
 		case 1 : post(); break;
 		case 2 : selectBoardList(); break;
-		case 3 : break;
+		case 3 : findByBoardNo(); break;
 		case 4 : break;
 		}
 	  }
@@ -252,6 +252,35 @@ public class IdolView {
 				System.out.println();
 			}
 		}
+	}
+		private void findByBoardNo() {
+			
+			System.out.println("\n게시글 상세 보기 서비스 입니다.");
+			
+			selectBoardList();
+			
+			System.out.println("상세 보기를 할 번호를 입력해주세요 > ");
+			int boardNo = sc.nextInt();
+			sc.nextLine();
+			
+			Board board = ic.findByBoardNo(boardNo);
+			
+			if(board != null) {
+				System.out.println("==========================");
+				System.out.println(boardNo + "번 게시글 상세보기");
+				// 4개 중에 하나 랜덤한 사진
+				System.out.println("\n제목" + board.getBoardTitle());
+				System.out.println("\n내용" + board.getBoardContent);
+				System.out.println("\n작성자 : " + board.getUserId());
+				System.out.println("\t작성일 : " + board.getCreateDate());
+				
+			} else {
+				System.out.println(boardNo + "번 게시글은 존재하지 않습니다");
+			}
+			
+			
+			
+		
 		
 		
 	}

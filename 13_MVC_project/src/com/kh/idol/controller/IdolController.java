@@ -160,5 +160,20 @@ public class IdolController {
 		return boards;
 		
 	}
-
+	
+	public Board findByBoardNo(int boardNo) {
+		
+		// int
+		
+		if(boardNo > this.boardNo) {
+			return null;
+		}
+		
+		boards.get(boardNo - 1);
+		
+		
+		
+		
+	}
+	
 }
