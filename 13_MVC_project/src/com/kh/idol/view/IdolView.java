@@ -270,7 +270,7 @@ public class IdolView {
 				System.out.println(boardNo + "번 게시글 상세보기");
 				// 4개 중에 하나 랜덤한 사진
 				System.out.println("\n제목" + board.getBoardTitle());
-				System.out.println("\n내용" + board.getBoardContent);
+				System.out.println("\n내용" + board.getBoardContent());
 				System.out.println("\n작성자 : " + board.getUserId());
 				System.out.println("\t작성일 : " + board.getCreateDate());
 				

@@ -12,11 +12,11 @@ public class Board {
 		super();
 	}
 
-	public Board(int boardNo, String boardTitle, String boareContent, String userId, String createDate) {
+	public Board(int boardNo, String boardTitle, String boardContent, String userId, String createDate) {
 		super();
 		this.boardNo = boardNo;
 		this.boardTitle = boardTitle;
-		this.boardContent = boareContent;
+		this.boardContent = boardContent;
 		this.userId = userId;
 		this.createDate = createDate;
 	}
@@ -37,12 +37,12 @@ public class Board {
 		this.boardTitle = boardTitle;
 	}
 
-	public String getBoareContent() {
+	public String getBoardContent() {
 		return boardContent;
 	}
 
-	public void setBoareContent(String boareContent) {
-		this.boardContent = boareContent;
+	public void setBoardContent(String boardContent) {
+		this.boardContent = boardContent;
 	}
 
 	public String getUserId() {
@@ -63,7 +63,7 @@ public class Board {
 
 	@Override
 	public String toString() {
-		return "Board [boardNo=" + boardNo + ", boardTitle=" + boardTitle + ", boareContent=" + boardContent
+		return "Board [boardNo=" + boardNo + ", boardTitle=" + boardTitle + ", boardContent=" + boardContent
 				+ ", userId=" + userId + ", createDate=" + createDate + "]";
 	}
 	

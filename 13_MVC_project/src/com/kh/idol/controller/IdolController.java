@@ -142,7 +142,7 @@ public class IdolController {
 		// 1. 데이터 가공
 		Board board = new Board();
 		board.setBoardTitle(boardTitle);
-		board.setBoareContent(boardContent);
+		board.setBoardContent(boardContent);
 		board.setUserId(userId);
 		board.setBoardNo(++boardNo);
 		String createDate=
@@ -163,13 +163,13 @@ public class IdolController {
 	
 	public Board findByBoardNo(int boardNo) {
 		
-		// int
+		// int randomPhoto = (int)MMath.random() * 3) +1;
 		
 		if(boardNo > this.boardNo) {
 			return null;
 		}
 		
-		boards.get(boardNo - 1);
+		return boards.get(boardNo - 1);
 		
 		
 		
